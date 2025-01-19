@@ -10,13 +10,9 @@ The overall strategy of this project is to replicate the market by constructing 
 
 To achieve this, we first calculate a correlation coefficient for each stock within its sector using historical data from the past year. Stocks that demonstrate a higher correlation with the sector’s overall movement are assigned higher correlation coefficients.
 
-Once these correlation coefficients are determined, a pairing algorithm is employed. This algorithm pairs sectors with the highest correlated stocks based on the computed coefficients, considering certain constraints. The number of stocks selected for each sector is determined by the sector’s weight in the market, specifically calculated as a percentage of the sector’s weight in the respective index, divided by two, multiplied by a constant, and then floored (as outlined in the driving code).
+Once these correlation coefficients are determined, a pairing algorithm is employed. This algorithm pairs sectors with the highest correlated stocks based on the computed coefficients, considering certain constraints. More formally, for each industry, **N** stocks are chosen, where **N** is calculated as a percentage of the sector’s weight in the respective index divided by two, multiplied by a constant, and floored (see driving code).
 
-Additionally, to minimize non-systematic risk, the algorithm ensures that the portfolio maintains limited exposure to any single stock. This is accomplished by assigning each stock to a maximum of 
-**N**
- sectors, where 
-**N**
- is optimized based on constants designed to balance diversification and risk management.
+Additionally, to minimize non-systematic risk, the algorithm ensures that the portfolio maintains limited exposure to any single stock. This is accomplished by assigning each stock at most **M** times to (not necessarily distinct) sector, where **M** is optimized based on constants designed to balance diversification and risk management.
 
  ## Algorithm
 
