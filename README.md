@@ -1,7 +1,7 @@
 
 ## Introduction
 
-In this project, our primary goal was to replicate the behavior of the market as accurately as possible by creating an optimized stock composition. By leveraging real-world data, MarketMirror strives to construct a portfolio that reflects market movements and characteristics, making it as close to the real market as we could get. This is crucial for understanding market trends and refining decision-making processes that rely on up-to-date stock performance and interactions.
+In this project, our primary goal was to replicate the behavior of the market as accurately as possible by creating an optimized stock composition. By leveraging real-world data, this project strives to construct a portfolio that reflects market movements and characteristics, making it as close to the real market as we could get. This is crucial for understanding market trends and refining decision-making processes that rely on up-to-date stock performance and interactions.
 
 ## Approach
 
