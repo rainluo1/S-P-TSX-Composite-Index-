@@ -17,7 +17,7 @@ Additionally, to minimize non-systematic risk, the algorithm ensures that the po
 
  The core of our algorithm involves constructing a portfolio by selecting stocks based on their correlation with different sectors. We begin by calculating the correlation for each stock relative to the sectors, ensuring that each sector is represented by the best correlated stock(s). To minimize risk and maintain diversification, we use a [Bipartite Matching Algorithm](https://www.geeksforgeeks.org/maximum-bipartite-matching/), a graph theory approach, to cap each stock while maximizing the correlation sum in the resulting portfolio.
 
-![My Image](images/maximum_matching.png)
+![Image](images/maximum_matching.png)
  
  This algorithm runs in 
 **O(VE)**, where 
